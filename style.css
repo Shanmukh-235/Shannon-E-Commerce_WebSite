@@ -48,6 +48,19 @@ p {
   margin: 40px 0;
 }
 
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
 body {
   width: 100%;
 }
@@ -175,25 +188,37 @@ body {
 }
 
 #feature .fe-box:nth-child(2) h6{
-  background-color: #fddde4 
+  background-color: #fddde4;
+  color: #cf69a5; 
 }
 #feature .fe-box:nth-child(3) h6{
-  background-color: #eaf5d8
+  background-color: #eaf5d8;
+  color:#819a53;
 }
 #feature .fe-box:nth-child(4) h6{
-  background-color: #e0ecf4 
+  background-color: #e0ecf4;
 }
 #feature .fe-box:nth-child(5) h6{
-  background-color: #cdd4f8
+  background-color: #cdd4f8;
+  color: #8d74da; 
 }
 #feature .fe-box:nth-child(6) h6{
-  background-color: #fff2e5 
+  background-color: #fff2e5 ;
+  color: #d49c7f;
 }
 
 /* ------------------- Products ------------------- */
 
 #product1{
   text-align: center;
+}
+
+#product1 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:20px;
+  flex-wrap: wrap;
 }
 
 #product1 .pro{
@@ -206,6 +231,7 @@ body {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
   margin: 15px 0;
   transition: 0.2s ease;
+  position: relative;
 }
 
 #product1 .pro:hover{
@@ -225,4 +251,69 @@ body {
 #product1 .pro .des span{
   color: #088178;
   font-size: 12px;
+}
+
+#product1 .pro .des h5{
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#product1 .pro .des i{
+  font-size: 12px;
+  color: rgb(243,181, 25);
+}
+
+#product1 .pro .des h4{
+  font-size: 16px;
+  color: #088178;
+  font-weight: 700;
+  padding-top: 7px;
+}
+
+#product1 .pro .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("assets/banner/b2.jpg");
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4{
+  color: #fff;
+  font-size: 16px;
+}
+
+#banner h2{
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner h2 span{
+  color: #ef3636;
+}
+
+#banner button:hover{
+  background-color: #088178;
+  color: #fff;
 }
