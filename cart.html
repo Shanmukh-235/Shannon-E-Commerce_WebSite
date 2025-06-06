@@ -1,178 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shannon</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shannon</title>
 
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
 
-        <section id="header">
-            <a href="#"><img src="./assets/logo.png" class="logo"></a>
+    <section id="header">
+        <a href="#"><img src="./assets/logo.png" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="cart-header">
+        <h2>#cart</h2>
+        <!-- <p>Read all case studies about our products!</p> -->
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="far fa-times-circle"></i><a href="#"></a></td>
+                    <td><img src="./assets/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirts</td>
+                    <td>₹750.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹750.00</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-times-circle"></i><a href="#"></a></td>
+                    <td><img src="./assets/products/f8.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirts</td>
+                    <td>₹750.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹750.00</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-times-circle"></i><a href="#"></a></td>
+                    <td><img src="./assets/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut Shirts</td>
+                    <td>₹750.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>₹750.00</td>
+                </tr>
+
+                <!-- Repeat similar blocks for more products -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
             <div>
-                <ul id="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li id="lg-bag" ><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-                    <a href="#" id="close"><i class="far fa-times"></i></a>
-                </ul>
+                <input type="text" placeholder="Enter your coupon code">
+                <button class="normal">Apply</button>
             </div>
-            <div id="mobile">
-                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-                <i id="bar" class="fas fa-outdent"></i>
-            </div>
-        </section>
-
-        <section id="page-header" class="cart-header">
-            <h2>#cart</h2>
-            <!-- <p>Read all case studies about our products!</p> -->
-        </section>
-
-        <section id="cart" class="section-p1">
-            <table width="100%">
-                <thead>
-                    <tr>
-                            <td>Remove</td>
-                            <td>Image</td>
-                            <td>Product</td>
-                            <td>Price</td>
-                            <td>Quantity</td>
-                            <td>Total</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><i class="far fa-times-circle"></i><a href="#"></a></td>
-                        <td><img src="./assets/products/f1.jpg" alt=""></td>
-                        <td>Cartoon Astronaut Shirts</td>
-                        <td>₹750.00</td>
-                        <td><input type="number" value="1"></td>
-                        <td>₹750.00</td>
-                    </tr>
-                    <tr>
-                        <td><i class="far fa-times-circle"></i><a href="#"></a></td>
-                        <td><img src="./assets/products/f8.jpg" alt=""></td>
-                        <td>Cartoon Astronaut Shirts</td>
-                        <td>₹750.00</td>
-                        <td><input type="number" value="1"></td>
-                        <td>₹750.00</td>
-                    </tr>
-                    <tr>
-                        <td><i class="far fa-times-circle"></i><a href="#"></a></td>
-                        <td><img src="./assets/products/f2.jpg" alt=""></td>
-                        <td>Cartoon Astronaut Shirts</td>
-                        <td>₹750.00</td>
-                        <td><input type="number" value="1"></td>
-                        <td>₹750.00</td>
-                    </tr>
-
-                    <!-- Repeat similar blocks for more products -->
-                </tbody>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>₹1800.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>₹1800.00</strong></td>
+                </tr>
             </table>
-        </section>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
 
-        <section id="cart-add" class="section-p1">
-            <div id="coupon">
-                <h3>Apply Coupon</h3>
-                <div>
-                    <input type="text" placeholder="Enter your coupon code">
-                    <button class="normal">Apply</button>
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="./assets/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> Moghalirajapuram Guhalu, Opposite Codegnan Destination, Vijayawada, India</p>
+            <p><strong>Phone: </strong> +69 0 420 420 420</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <a href="https://shanmukha-s-port-folio.vercel.app/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="mailto:shanmukhapoornachand14316@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://github.com/Shanmukh-235"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shanmukha-poorna-chand-adapaka/"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
-            <div id="subtotal">
-                <h3>Cart Totals</h3>
-                <table>
-                    <tr>
-                        <td>Cart Subtotal</td>
-                        <td>₹1800.00</td>
-                    </tr>
-                    <tr>
-                        <td>Shipping</td>
-                        <td>Free</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Total</strong></td>
-                        <td><strong>₹1800.00</strong></td>
-                    </tr>
-                </table>
-                <button class="normal">Proceed to Checkout</button>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="./assets/pay/app.jpg" alt="">
+                <img src="./assets/pay/play.jpg" alt="">
             </div>
-        </section>
+            <p>Secured Payment Gateways</p>
+            <img src="./assets/pay/pay.png" alt="">
+        </div>
 
-        <section id="newsletter" class="section-p1 section-m1">
-            <div class="newstext">
-                <h4>Sign Up For Newsletters</h4>
-                <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
-            </div>
-            <div class="form">
-                <input type="email" placeholder="Your email address">
-                <button class="normal">Sign Up</button>
-            </div>
-        </section>
+        <div class="copyright">
+            © 2025 ShaNNoN. All rights reserved.
+        </div>
 
-        <footer class="section-p1">
-            <div class="col">
-                <img class="logo" src="./assets/logo.png" alt="">
-                <h4>Contact</h4>
-                <p><strong>Address: </strong> Moghalirajapuram Guhalu, Opposite Codegnan Destination, Vijayawada, India</p>
-                <p><strong>Phone: </strong> +69 0 420 420 420</p>
-                <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
-                <div class="follow">
-                    <h4>Follow Us</h4>
-                    <div class="icon">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-                </div>
-            </div>
+    </footer>
 
-            <div class="col">
-                <h4>About</h4>
-                <a href="#">About Us</a>
-                <a href="#">Delivery Information</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-            </div>
+    <script src="script.js"></script>
 
-            <div class="col">
-                <h4>My Account</h4>
-                <a href="#">Sign In</a>
-                <a href="#">View Cart</a>
-                <a href="#">My Wishlist</a>
-                <a href="#">Track My Order</a>
-            </div>
-
-            <div class="col install">
-                <h4>Install App</h4>
-                <p>From App Store or Google Play</p>
-                <div class="row">
-                    <img src="./assets/pay/app.jpg" alt="">
-                    <img src="./assets/pay/play.jpg" alt="">
-                </div>
-                <p>Secured Payment Gateways</p>
-                <img src="./assets/pay/pay.png" alt="">
-            </div>
-
-            <div class="copyright">
-                © 2025 Shannon. All rights reserved.
-            </div>
-
-        </footer>
-
-        <script src="script.js"></script>
-
-    </body>
+</body>
 
 </html>
